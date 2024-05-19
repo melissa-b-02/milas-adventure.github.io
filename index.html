@@ -12,8 +12,8 @@
   </head>
   <body>
     <header>
-        <h1>Mila's Adventure</h1>
-        <img src="/IconNew.png">
+        <img src="/IconNew.png" class="mila"> 
+        <h1>Mila's Adventure</h1> 
       </header>
     
     <main>
@@ -116,18 +116,15 @@
         overflow-wrap: break-word;
       }
 
+      
       /* Make the header bg full width, but the content inline with body */
       header {
-        text-align: center;
+        display: flex; /* Flexbox verwenden */
+        justify-content: space-between; /* Platz zwischen den Elementen */
+        align-items: center; /* Zentriert die Elemente vertikal */
         padding: 2rem 0.5rem;
-        width: 100vw;
-        position: relative;
-
+        width: 25vw;
         box-sizing: border-box;
-        left: 50%;
-        right: 50%;
-        margin-left: -50vw;
-        margin-right: -50vw;
       }
 
       /* Remove margins for header text */
@@ -135,6 +132,7 @@
       header p {
         margin: 0;
       }
+
 
       /* Add a little padding to ensure spacing is correct between content and nav */
       main {
@@ -550,7 +548,7 @@
         font-size: 16px;
         font-weight: bold;
         color: white;
-        background-color: #007bff;
+        background-color: #ED7D32;
         border: none;
         border-radius: 5px;
         text-decoration: none;
@@ -559,6 +557,10 @@
 
       .download-button:hover {
         background-color: #0056b3;
+      }
+
+      .mila{
+        height: 100px;
       }
     </style>
   </body>
